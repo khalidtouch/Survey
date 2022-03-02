@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Survey"
 include ':app'
+include ':app:buildsrc'
+include ':buildsrc'

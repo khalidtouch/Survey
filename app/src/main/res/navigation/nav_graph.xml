@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.touch.survey.authentication.welcomeScreen.WelcomeFragment"
+        android:label="WelcomeFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.touch.survey.signInScreen.SignInFragment"
+        android:label="SignInFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.touch.survey.signUpScreen.SignUpFragment"
+        android:label="SignUpFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/surveyFragment"
+        android:name="com.touch.survey.surveyScreen.SurveyFragment"
+        android:label="SurveyFragment" />
+</navigation>

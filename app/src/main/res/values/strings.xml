@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">Survey</string>
+    <string name="app_tagline">Better see what Jetpack Compose can do</string>
+    <string name="sign_in_create_account">Sign in or create an account</string>
+    <string name="email">Email</string>
+    <string name="hide_password">Hide password</string>
+    <string name="show_password">Show password</string>
+    <string name="continue_sign_in">continue</string>
+    <string name="or_string">or</string>
+    <string name="sign_in_as_guest">Sign in as guest</string>
+    <string name="snackbar_error">Feature Not Available</string>
+    <string name="snackbar_label">DISMISS</string>
+    <string name="back">Back</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="confirm_password">Confirm password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_one">In my free time I like to</string>
+    <string name="work_out">Work out</string>
+    <string name="dance">Dance</string>
+    <string name="play_video_games">Play Video Games</string>
+    <string name="watch_tv">Watch TV</string>
+    <string name="indoor_sport">Indoor Sport</string>
+    <string name="select_all">Select all that apply.</string>
+    <string name="select_date">Select date.</string>
+    <string name="your_favorite_fruit">Your favorite fruit is </string>
+    <string name="mango">Mango</string>
+    <string name="cashew">Cashew</string>
+    <string name="banana">Banana</string>
+    <string name="pear">Pear</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="orange">Orange</string>
+    <string name="select_one">Select one.</string>
+    <string name="pick_a_date">Pick a date</string>
+    <string name="take_a_photo">Pick a date</string>
+    <string name="add_photo">Add photo</string>
+    <string name="start_text">very low</string>
+    <string name="end_text">very high</string>
+    <string name="neutral_text">fairly</string>
+    <string name="about_you">Tell us a little about yourself</string>
+    <string name="permission_rationale_text">Taking a photo requires this app to have access to you</string>
+    <string name="how_do_feel">How confident do you feel about yourself?</string>
+    <string name="last_time">When was the last time you read a book?</string>
+    <string name="do_you_mind">Do you mind sharing a photo of yourself?</string>
+    <string name="survey_result">Congratulations, you are %s</string>
+    <string name="survey_result_description">You are a productive person, always willing to try
+        something new. You want to stay up to date with the trends.</string>
+    <string name="retake_photo">Retake photo</string>
+    <string name="question_count">\u00A0of %d</string>
+    <string name="date_picker_title">This Picker has to work</string>
+
+
+
+    <string name="next">NEXT</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="done">DONE</string>
+
+    <string name="close">Close</string>
+
+    <!-- Permissions-->
+    <string name="permissions_rationale">This question requires some permissions. Please grant them.</string>
+    <string name="permissions_denied">Permissions were denied. Unfortunately, this question is not available at the moment. Please continue with the survey or grant access to the permissions on the Settings screen.</string>
+    <string name="request_permissions">OK!</string>
+    <string name="do_not_ask_permissions">Nope 🙅</string>
+    <string name="open_settings">Open Settings</string>
+
+
 </resources>
