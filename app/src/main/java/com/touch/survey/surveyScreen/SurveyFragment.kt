@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.result.contract.ActivityResultContracts.*
 import androidx.annotation.StringRes
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.platform.ComposeView
@@ -28,9 +29,11 @@ class SurveyFragment : Fragment() {
     }
 
     private val takePicture =
-        registerForActivityResult(ActivityResultContracts.TakePicture()) { isPhotoSaved ->
+        registerForActivityResult(TakePicture()) { isPhotoSaved ->
             if (isPhotoSaved) {
                 surveyViewModel.onImageSaved()
+            } else {
+                //todo if photo wasn't saved
             }
         }
 
@@ -48,7 +51,7 @@ class SurveyFragment : Fragment() {
             )
 
             setContent {
-                MySurveyTheme {
+                MySurveyTheme(darkTheme = false) {
                     surveyViewModel.uiState.observeAsState().value?.let { surveyState ->
                         when (surveyState) {
                             is SurveyState.Questions -> SurveyQuestionsScreen(

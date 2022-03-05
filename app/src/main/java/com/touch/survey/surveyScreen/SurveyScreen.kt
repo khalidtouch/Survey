@@ -26,7 +26,6 @@ import com.touch.survey.theme.progressIndicatorBackground
 import com.touch.survey.util.states.QuestionState
 import com.touch.survey.util.states.SurveyState
 import com.touch.survey.util.supportWideScreen
-import java.time.temporal.TemporalAdjusters.previous
 
 @Composable
 fun SurveyBottomBar(
@@ -61,7 +60,11 @@ fun SurveyBottomBar(
                         .weight(1f)
                         .height(48.dp),
                     onClick = onDonePressed,
-                    enabled = questionState.enableNext
+                    enabled = questionState.enableNext,
+                    colors = ButtonDefaults.buttonColors(
+                        backgroundColor = MaterialTheme.colors.onSecondary,
+                        contentColor = MaterialTheme.colors.onPrimary
+                    )
                 ) {
                     Text(text = stringResource(id = R.string.done))
                 }
@@ -71,7 +74,11 @@ fun SurveyBottomBar(
                         .weight(1f)
                         .height(48.dp),
                     onClick = onNextPressed,
-                    enabled = questionState.enableNext
+                    enabled = questionState.enableNext,
+                    colors = ButtonDefaults.buttonColors(
+                        backgroundColor = MaterialTheme.colors.onSecondary,
+                        contentColor = MaterialTheme.colors.onPrimary
+                    )
                 ) {
                     Text(text = stringResource(id = R.string.next))
                 }

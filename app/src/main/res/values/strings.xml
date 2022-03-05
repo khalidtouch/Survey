@@ -57,10 +57,12 @@
 
 
     <string name="next">NEXT</string>
+    <string name="branding_name">Survey</string>
     <string name="previous">PREVIOUS</string>
     <string name="done">DONE</string>
 
     <string name="close">Close</string>
+    <string name="photo_succeeded">Photo successfully uploaded</string>
 
     <!-- Permissions-->
     <string name="permissions_rationale">This question requires some permissions. Please grant them.</string>

@@ -24,7 +24,7 @@ class SignInFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        signInViewModel.navigateTo.observe(viewLifecycleOwner) {navigateToEvent ->
+        signInViewModel.navigateTo.observe(viewLifecycleOwner) { navigateToEvent ->
             navigateToEvent.goToIfNotCurrentlyActive()?.let { destinationScreen ->
                 navigate(Screen.SignIn, destinationScreen)
             }
@@ -38,27 +38,27 @@ class SignInFragment : Fragment() {
             )
 
             setContent {
-                MySurveyTheme {
-                   SignInScreen(onNavigationEvent = { event ->
-                       when(event) {
-                           is SignInEvent.SignIn -> {
-                               signInViewModel.signIn(event.email, event.password)
-                           }
+                MySurveyTheme(darkTheme = false) {
+                    SignInScreen(onNavigationEvent = { event ->
+                        when (event) {
+                            is SignInEvent.SignIn -> {
+                                signInViewModel.signIn(event.email, event.password)
+                            }
 
-                           is SignInEvent.SignUp -> {
-                               signInViewModel.signUp()
-                           }
+                            is SignInEvent.SignUp -> {
+                                signInViewModel.signUp()
+                            }
 
-                           is SignInEvent.SignInAsGuest -> {
-                               signInViewModel.signInAsGuest()
-                           }
+                            is SignInEvent.SignInAsGuest -> {
+                                signInViewModel.signInAsGuest()
+                            }
 
-                           else -> {
-                               activity?.onBackPressedDispatcher?.onBackPressed()
-                           }
-                       }
-                   }
-                   )
+                            else -> {
+                                activity?.onBackPressedDispatcher?.onBackPressed()
+                            }
+                        }
+                    }
+                    )
 
                 }
             }

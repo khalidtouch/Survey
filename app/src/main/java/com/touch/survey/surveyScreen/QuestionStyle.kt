@@ -513,6 +513,13 @@ fun PhotoQuestionStyle(
                         .heightIn(96.dp)
                         .aspectRatio(4 / 3f)
                 )
+
+                Text(
+                    text = stringResource(id = R.string.photo_succeeded),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 10.dp, vertical = 20.dp)
+                )
             } else {
                 PhotoDefaultImage(modifier = Modifier.padding(horizontal = 86.dp, vertical = 74.dp))
             }
@@ -563,7 +570,7 @@ fun DateQuestionStyle(
         modifier = modifier
             .padding(vertical = 20.dp)
             .height(54.dp),
-        elevation = ButtonDefaults.elevation(0.dp),
+        elevation = ButtonDefaults.elevation(2.dp),
         border = BorderStroke(1.dp, MaterialTheme.colors.onSurface.copy(alpha = 0.12f))
     ) {
         Text(

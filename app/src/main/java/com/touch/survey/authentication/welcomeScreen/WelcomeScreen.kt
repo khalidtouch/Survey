@@ -84,15 +84,10 @@ private fun Branding(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier.wrapContentHeight(align = Alignment.CenterVertically)
     ) {
-        Logo(
-            modifier = Modifier
-                .align(Alignment.CenterHorizontally)
-                .padding(horizontal = 76.dp)
-        )
 
         Text(
-            text = stringResource(id = R.string.app_tagline),
-            style = MaterialTheme.typography.subtitle1,
+            text = stringResource(id = R.string.branding_name),
+            style = MaterialTheme.typography.h3,
             textAlign = TextAlign.Center,
             modifier = Modifier
                 .padding(top = 24.dp)

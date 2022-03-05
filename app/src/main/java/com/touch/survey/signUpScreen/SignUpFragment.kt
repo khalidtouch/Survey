@@ -37,7 +37,7 @@ class SignUpFragment : Fragment() {
                 ViewGroup.LayoutParams.MATCH_PARENT
             )
             setContent {
-                MySurveyTheme {
+                MySurveyTheme(darkTheme = false) {
 
                     SignUpScreen(onNavigationEvent = { event ->
                         when (event) {

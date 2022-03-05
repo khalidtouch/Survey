@@ -23,4 +23,8 @@
         android:id="@+id/surveyFragment"
         android:name="com.touch.survey.surveyScreen.SurveyFragment"
         android:label="SurveyFragment" />
+    <fragment
+        android:id="@+id/completedFragment"
+        android:name="com.touch.survey.completedScreen.CompletedFragment"
+        android:label="CompletedFragment" />
 </navigation>

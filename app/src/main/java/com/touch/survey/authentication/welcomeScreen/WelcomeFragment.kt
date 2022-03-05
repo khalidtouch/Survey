@@ -32,7 +32,7 @@ class WelcomeFragment : Fragment() {
 
         return ComposeView(requireContext()).apply {
             setContent {
-                MySurveyTheme {
+                MySurveyTheme (darkTheme = false){
                     WelcomeScreen(
                         onEvent = { welcomeEvent ->
                             when (welcomeEvent) {
